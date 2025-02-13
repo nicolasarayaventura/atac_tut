@@ -1,0 +1,115 @@
+Sender: LSF System <lsfadmin@lc07e58>
+Subject: Job 168979743: <bash -c 'raw_data'> in cluster <chimera> Exited
+
+Job <bash -c 'raw_data'> was submitted from host <li04e03> by user <arayan01> in cluster <chimera> at Mon Feb 10 15:01:21 2025
+Job was executed on host(s) <lc07e58>, in queue <premium>, as user <arayan01> in cluster <chimera> at Mon Feb 10 15:01:26 2025
+</hpc/users/arayan01> was used as the home directory.
+</sc/arion/scratch/arayan01/projects/atac_tut/raw_data> was used as the working directory.
+Started at Mon Feb 10 15:01:26 2025
+Terminated at Mon Feb 10 15:01:26 2025
+Results reported at Mon Feb 10 15:01:26 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash -c 'raw_data'
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time :                                   0.02 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     6000.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   0 sec.
+    Turnaround time :                            5 sec.
+
+The output (if any) follows:
+
+bash: line 1: raw_data: command not found
+Sender: LSF System <lsfadmin@lc06e71>
+Subject: Job 168979843: <bash raw_data> in cluster <chimera> Exited
+
+Job <bash raw_data> was submitted from host <li04e03> by user <arayan01> in cluster <chimera> at Mon Feb 10 15:06:29 2025
+Job was executed on host(s) <lc06e71>, in queue <premium>, as user <arayan01> in cluster <chimera> at Mon Feb 10 15:06:32 2025
+</hpc/users/arayan01> was used as the home directory.
+</sc/arion/scratch/arayan01/projects/atac_tut/raw_data> was used as the working directory.
+Started at Mon Feb 10 15:06:32 2025
+Terminated at Mon Feb 10 15:06:32 2025
+Results reported at Mon Feb 10 15:06:32 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash raw_data
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time :                                   0.02 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     6000.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   0 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) follows:
+
+bash: raw_data: No such file or directory
+Sender: LSF System <lsfadmin@lc07e24>
+Subject: Job 168979925: <bash raw_data.sh> in cluster <chimera> Exited
+
+Job <bash raw_data.sh> was submitted from host <li04e03> by user <arayan01> in cluster <chimera> at Mon Feb 10 15:08:05 2025
+Job was executed on host(s) <lc07e24>, in queue <premium>, as user <arayan01> in cluster <chimera> at Mon Feb 10 15:08:12 2025
+</hpc/users/arayan01> was used as the home directory.
+</sc/arion/scratch/arayan01/projects/atac_tut/raw_data> was used as the working directory.
+Started at Mon Feb 10 15:08:12 2025
+Terminated at Mon Feb 10 15:08:12 2025
+Results reported at Mon Feb 10 15:08:12 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash raw_data.sh
+------------------------------------------------------------
+
+Exited with exit code 4.
+
+Resource usage summary:
+
+    CPU time :                                   0.09 sec.
+    Max Memory :                                 19 MB
+    Average Memory :                             13.00 MB
+    Total Requested Memory :                     6000.00 MB
+    Delta Memory :                               5981.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   0 sec.
+    Turnaround time :                            7 sec.
+
+The output (if any) follows:
+
++ raw_data
++ fastqc_raw=/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/fastqc_initial
++ read sample url
++ wget -O /sc/arion/scratch/arayan01/projects/atac_tut/raw_data/fastqc_initial/SRR10261596.fastq.gz 'https://trace.ncbi.nlm.nih.gov/Traces/sra-reads-be/fastq?acc=SRR10261596'
+--2025-02-10 15:08:12--  https://trace.ncbi.nlm.nih.gov/Traces/sra-reads-be/fastq?acc=SRR10261596
+Resolving trace.ncbi.nlm.nih.gov (trace.ncbi.nlm.nih.gov)... 2607:f220:41e:4290::113, 130.14.29.113
+Connecting to trace.ncbi.nlm.nih.gov (trace.ncbi.nlm.nih.gov)|2607:f220:41e:4290::113|:443... failed: Network is unreachable.
+Connecting to trace.ncbi.nlm.nih.gov (trace.ncbi.nlm.nih.gov)|130.14.29.113|:443... failed: Network is unreachable.

@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR10261593_tr_2P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261593_tr_2P_fastqc.zip
+FastQC	all_sections	SRR10261591_tr_2P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261591_tr_2P_fastqc.zip
+FastQC	all_sections	SRR10261592_tr_2P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261592_tr_2P_fastqc.zip
+FastQC	all_sections	SRR10261596_tr_1P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261596_tr_1P_fastqc.zip
+FastQC	all_sections	SRR10261596_tr_2P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261596_tr_2P_fastqc.zip
+FastQC	all_sections	SRR10261594_tr_1P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261594_tr_1P_fastqc.zip
+FastQC	all_sections	SRR10261594_tr_2P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261594_tr_2P_fastqc.zip
+FastQC	all_sections	SRR10261595_tr_1P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261595_tr_1P_fastqc.zip
+FastQC	all_sections	SRR10261593_tr_1P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261593_tr_1P_fastqc.zip
+FastQC	all_sections	SRR10261592_tr_1P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261592_tr_1P_fastqc.zip
+FastQC	all_sections	SRR10261591_tr_1P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261591_tr_1P_fastqc.zip
+FastQC	all_sections	SRR10261595_tr_2P	/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/fastqc_trimming/SRR10261595_tr_2P_fastqc.zip
