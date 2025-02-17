@@ -23,16 +23,27 @@ function indexing {
 
 done < "${sample}"
 }
+
 function index_qc {
 index_dir="/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/indexing"
 	while read sample; do
 		bsub -P acc_oscarlr -q premium -n 2 -W 24:00 -R "rusage[mem=8000]" -o "job2_${sample}.txt" \
-			"samtools view -bh ${index_dir}/${sample}.bam I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI > ${index_dir}/${sample}_SC_subset.bam
-			&& picard MarkDuplicates I=${index_dir}/${sample}_SC_subset.bam O=${index_dir}/${sample}_SC_subset_dedup.bam M=${index_dir}/${sample}_markdup_metrics.txt \
-			& samtools index ${index_dir}/${sample}_SC_subset_dedup.bam \
-			&& samtools flagstat ${index_dir}/${sample}_SC_subset_dedup.bam > ${index_dir}/${sample}_SC_subset_dedup_map_stats.txt"
+			"samtools view -bh ${index_dir}/${sample}.bam I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI > ${index_dir}/${sample}_SC_subset.bam && \
+			picard MarkDuplicates I=${index_dir}/${sample}_SC_subset.bam O=${index_dir}/${sample}_SC_subset_dedup.bam M=${index_dir}/${sample}_markdup_metrics.txt && \
+			samtools index ${index_dir}/${sample}_SC_subset_dedup.bam && \
+			samtools flagstat ${index_dir}/${sample}_SC_subset_dedup.bam > ${index_dir}/${sample}_SC_subset_dedup_map_stats.txt"
 done < "${sample}"
 }
 
+function peakcall {
+index_dir="/sc/arion/scratch/arayan01/projects/atac_tut/raw_data/trimming/indexing"
+	mkdir ${index_dir}/peakcallings
+		peakcall="${index_dir}/peakcallings"
+	while read sample; do
+		bsub -P acc_oscarlr -q premium -n 2 -W 24:00 -R "rusage[mem=8000]" -o "job3_${sample}.txt" \
+			"macs2 callpeak -t ${index_dir}/${sample}_SC_subset_dedup.bam -f BAMPE -n ${peakcall}/${sample}_peak -g 12000000 --keep-dup all"
+done < "${sample}"
+}
 #indexing
 index_qc
+#peakcall
